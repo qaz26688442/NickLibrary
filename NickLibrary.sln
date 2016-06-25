@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NickLibrary", "NickLibrary\NickLibrary.csproj", "{380FCAD1-6392-4A06-9426-FD3BE9038AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{380FCAD1-6392-4A06-9426-FD3BE9038AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380FCAD1-6392-4A06-9426-FD3BE9038AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380FCAD1-6392-4A06-9426-FD3BE9038AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380FCAD1-6392-4A06-9426-FD3BE9038AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
