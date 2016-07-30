@@ -13,15 +13,9 @@ namespace NickLibrary.Services
         /// <returns>是否為中文</returns>
         public bool IsChinese(string value)
         {
-            regex = new Regex("^[\u4e00-\u9fa5]");
-            foreach (var item in value)
-            {
-                if (!regex.IsMatch(item.ToString()))
-                {
-                    return false;
-                }
-            }
-            return true;
+            regex = new Regex("^[\u4e00-\u9fa5]+$");
+
+            return regex.IsMatch(value);
         }
     }
 }

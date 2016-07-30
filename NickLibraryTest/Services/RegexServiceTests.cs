@@ -36,7 +36,31 @@ namespace NickLibrary.Services.Tests
             RegexService regexService = new RegexService();
             bool expected = false;
             //Acaual
+            bool actual = regexService.IsChinese("L林fd菘1彬");
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void IsChinese_MixEnglishIBeforeChinese_Ture()
+        {
+            //Arrange
+            RegexService regexService = new RegexService();
+            bool expected = false;
+            //Acaual
             bool actual = regexService.IsChinese("Lin林菘彬");
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void IsChinese_MixEnglishIAfterChinese_Ture()
+        {
+            //Arrange
+            RegexService regexService = new RegexService();
+            bool expected = false;
+            //Acaual
+            bool actual = regexService.IsChinese("林菘彬Lin");
             //Assert
             Assert.AreEqual(expected, actual);
         }
